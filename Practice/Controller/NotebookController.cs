@@ -33,6 +33,7 @@ public class NotebookController
             Console.WriteLine("3 - Изменить запись");
             Console.WriteLine("4 - Просмотреть конкретную запись");
             Console.WriteLine("5 - Просмотреть все записи");
+            Console.WriteLine("6 - Отсортировать записи по имени");
 
             choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -88,6 +89,9 @@ public class NotebookController
                     break;
                 case 5:
                     Console.WriteLine(book.ToString());
+                    break;
+                case 6:
+                    book.SortNotesByName();
                     break;
                 default:
                     continue;

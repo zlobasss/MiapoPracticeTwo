@@ -53,4 +53,20 @@ public class Book
     {
         return _notes.Count();
     }
+    
+    public void SortNotesByName()
+    {
+        for (int i = 0; i < _notes.Count - 1; ++i)
+        {
+            for (int j = i + 1; j < _notes.Count - 1; ++j)
+            {
+                string name1 = _notes[i].GetName();
+                string name2 = _notes[j].GetName();
+                if (string.CompareOrdinal(name1, name2) < 0)
+                {
+                    (_notes[i], _notes[j]) = (_notes[j], _notes[i]);
+                }
+            }
+        }
+    }
 }
