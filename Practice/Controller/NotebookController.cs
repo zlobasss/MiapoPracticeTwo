@@ -29,6 +29,7 @@ public class NotebookController
             Console.WriteLine("Выберите действие с записной книжкой:");
             Console.WriteLine("0 - Выйти из записной книжки");
             Console.WriteLine("1 - Добавить запись");
+            Console.WriteLine("2 - Удалить запись");
 
             choice = int.Parse(Console.ReadLine());
             switch (choice)
