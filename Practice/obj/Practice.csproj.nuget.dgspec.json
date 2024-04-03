@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/serge/RiderProjects/Practice/Practice/Practice.csproj": {}
+    "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/Practice.csproj": {}
   },
   "projects": {
-    "/home/serge/RiderProjects/Practice/Practice/Practice.csproj": {
+    "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/serge/RiderProjects/Practice/Practice/Practice.csproj",
+        "projectUniqueName": "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/Practice.csproj",
         "projectName": "Practice",
-        "projectPath": "/home/serge/RiderProjects/Practice/Practice/Practice.csproj",
+        "projectPath": "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/Practice.csproj",
         "packagesPath": "/home/serge/.nuget/packages/",
-        "outputPath": "/home/serge/RiderProjects/Practice/Practice/obj/",
+        "outputPath": "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/serge/.nuget/NuGet/NuGet.Config"
