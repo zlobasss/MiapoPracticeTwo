@@ -37,4 +37,9 @@ public class Book
         _notes.RemoveAt(id - 1);
     }
     
+    // Изменение заметки
+    public void EditNote(int id, string name, string description)
+    {
+        _notes[id - 1] = new Note(name, description);
+    }
 }
