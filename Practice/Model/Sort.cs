@@ -106,4 +106,24 @@ public class Sort
         } while (swapped);
     }
     
+    // Метод челночной сортировки
+    public static void ShuttleSort(int[] array)
+    {
+        int index = 0;
+        
+        while (index < array.Length)
+        {
+            if (index == 0)
+                index++;
+            
+            if (array[index] >= array[index - 1])
+                index++;
+            else
+            {
+                (array[index], array[index - 1]) = (array[index - 1], array[index]);
+                index--;
+            }
+        }
+    }
+    
 }

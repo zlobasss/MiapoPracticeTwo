@@ -24,9 +24,10 @@ public class SortController
         Console.WriteLine("1 - Сортировка линейным выбором");
         Console.WriteLine("2 - Сортировка минимального/максимального числа");
         Console.WriteLine("3 - Сортировка пузырьком");
+        Console.WriteLine("4 - Челночная сортировка");
         
         int choice = int.Parse(Console.ReadLine());
-        while(choice < 1 || choice > 3)
+        while(choice < 1 || choice > 4)
         {
             Console.WriteLine("Некорректный выбор, введите заново!");
             choice = int.Parse(Console.ReadLine());
@@ -43,6 +44,10 @@ public class SortController
             case 3:
                 Sort.BubbleSort(array);
                 break;
+            case 4:
+                Sort.ShuttleSort(array);
+                break;
+            
         }
         
         Console.WriteLine("Отсортированный массив:");
