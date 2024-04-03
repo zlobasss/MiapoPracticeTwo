@@ -42,4 +42,10 @@ public class Book
     {
         _notes[id - 1] = new Note(name, description);
     }
+
+    // Получение заметки по айди
+    public Note GetNote(int id)
+    {
+        return _notes[id - 1];
+    }
 }
