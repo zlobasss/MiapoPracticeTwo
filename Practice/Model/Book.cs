@@ -69,4 +69,22 @@ public class Book
             }
         }
     }
+    
+    public void SortNotesByDescription()
+    {
+        for (int i = 0; i < _notes.Count - 1; ++i)
+        {
+            for (int j = i + 1; j < _notes.Count - 1; ++j)
+            {
+                string description1 = _notes[i].GetDescription();
+                string description2 = _notes[j].GetDescription();
+                if (string.CompareOrdinal(description1, description2) >= 0)
+                {
+                    Note temp = _notes[i];
+                    _notes[i] = _notes[j];
+                    _notes[j] = temp;
+                }
+            }
+        }
+    }
 }
