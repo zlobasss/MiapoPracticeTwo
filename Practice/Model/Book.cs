@@ -30,4 +30,11 @@ public class Book
     {
         _notes.Add(new Note(name, description));
     }
+
+    // Удаление заметки из книги
+    public void DeleteNote(int id)
+    {
+        _notes.RemoveAt(id - 1);
+    }
+    
 }

@@ -39,6 +39,15 @@ public class NotebookController
                     note = InputDataNote();
                     book.AddNote(note.GetName(), note.GetDescription());
                     break;
+                case 2:
+                    Console.WriteLine("Введите номер элемента:");
+                    id = int.Parse(Console.ReadLine()) - 1;
+                    if (id >= 0 && id < book.Count())
+                    {
+                        book.DeleteNote(id);
+                    }
+                    break;
+
                 default:
                     continue;
             }
