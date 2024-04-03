@@ -32,6 +32,7 @@ public class NotebookController
             Console.WriteLine("2 - Удалить запись");
             Console.WriteLine("3 - Изменить запись");
             Console.WriteLine("4 - Просмотреть конкретную запись");
+            Console.WriteLine("5 - Просмотреть все записи");
 
             choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -84,6 +85,9 @@ public class NotebookController
                     Console.WriteLine("Введите номер элемента:");
                     id = int.Parse(Console.ReadLine()) - 1;
                     Console.WriteLine(book.GetNote(id).ToString());
+                    break;
+                case 5:
+                    Console.WriteLine(book.ToString());
                     break;
                 default:
                     continue;
