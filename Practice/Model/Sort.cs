@@ -81,6 +81,29 @@ public class Sort
 
             return arr[minIndex];
         }
-
     }
+    
+    // Метод сортировки пузырьком
+    public static void BubbleSort(int[] array)
+    {
+        if (array == null || array.Length <= 1)
+        {
+            return;
+        }
+
+        bool swapped;
+        do
+        {
+            swapped = false;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if (array[i] > array[i + 1])
+                {
+                    (array[i], array[i + 1]) = (array[i + 1], array[i]);
+                    swapped = true;
+                }
+            }
+        } while (swapped);
+    }
+    
 }
