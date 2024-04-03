@@ -48,4 +48,9 @@ public class Book
     {
         return _notes[id - 1];
     }
+    
+    public int Count()
+    {
+        return _notes.Count();
+    }
 }

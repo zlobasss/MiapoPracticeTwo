@@ -1,1 +1,4 @@
 .idea
+/Practice/obj/Debug/**
+bin
+.git
