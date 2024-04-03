@@ -22,9 +22,10 @@ public class SortController
 
         Console.WriteLine("Выберите метод сортировки:");
         Console.WriteLine("1 - Сортировка линейным выбором");
+        Console.WriteLine("2 - Сортировка минимального/максимального числа");
         
         int choice = int.Parse(Console.ReadLine());
-        while(choice < 1 || choice > 1)
+        while(choice < 1 || choice > 2)
         {
             Console.WriteLine("Некорректный выбор, введите заново!");
             choice = int.Parse(Console.ReadLine());
@@ -34,6 +35,9 @@ public class SortController
         {
             case 1:
                 Sort.SelectionSort(array);
+                break;
+            case 2:
+                Sort.MinimumMaximumSort(array);
                 break;
         }
         

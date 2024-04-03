@@ -58,4 +58,29 @@ public class Sort
         }
         return newArr;
     }
+    
+    // Метод сортировки минимального/максимального числа
+    public static void MinimumMaximumSort(int[] array)
+    {
+        int FindMinElement(int[] arr)
+        {
+            if (arr == null || arr.Length == 0)
+            {
+                throw new ArgumentException("Массив пуст или не существует");
+            }
+
+            int minIndex = 0;
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < arr[minIndex])
+                {
+                    minIndex = i;
+                }
+            }
+
+            return arr[minIndex];
+        }
+
+    }
 }
