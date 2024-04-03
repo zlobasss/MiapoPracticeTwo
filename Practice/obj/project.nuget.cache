@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Vl69b3C23iP9aD4GRaGkDFYwP8K+z99n+jlVLO4RlfQZwi4vaESKP6TwutNRKYAAW/WDG5yhlWC8VDKi+nkSNA==",
+  "dgSpecHash": "rxxsCCF+XkF3G+jbIuG7bJ9woZ+YTaDUOKWsymepuU6yOEK0SkZrDNRDnDyQvzKK1znbfHfKMdM7Iscg1b5p+g==",
   "success": true,
-  "projectFilePath": "/home/serge/RiderProjects/MiapoPracticeTwo/Practice/Practice.csproj",
+  "projectFilePath": "C:\\Users\\админ.DESKTOP-6TCRGPM\\Desktop\\MiapoPracticeTwo\\Practice\\Practice.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\админ.DESKTOP-6TCRGPM\\Desktop\\MiapoPracticeTwo\\Practice\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
