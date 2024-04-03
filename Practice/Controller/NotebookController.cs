@@ -89,7 +89,14 @@ public class NotebookController
                     Console.WriteLine(book.GetNote(id).ToString());
                     break;
                 case 5:
-                    Console.WriteLine(book.ToString());
+                    if (book.Count() == 0)
+                    {
+                        Console.WriteLine("Записей не обнаружено!!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine(book.ToString());
+                    }
                     break;
                 case 6:
                     book.SortNotesByName();

@@ -12,6 +12,12 @@ public class Note
         _description = description;
     }
 
+    public Note(Note note)
+    {
+        _name = note.GetName();
+        _description = note.GetDescription();
+    }
+
     public string GetName()
     {
         return _name;
